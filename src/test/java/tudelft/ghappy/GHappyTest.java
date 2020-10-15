@@ -16,7 +16,7 @@ public class GHappyTest {
     
     @ParameterizedTest(name = "string={0}, result={1}")
     @CsvSource({"ff,false", "g,false", "gg,true", "ggg,true", "ggxg,false", "ggxgg,true", "gxg,false", "x,false", "xg,false"})
-    public void totalIsTooBig(String string, boolean expectedResult) {
+    public void Testcase(String string, boolean expectedResult) {
         boolean result = happy.gHappy(string);
         Assertions.assertEquals(expectedResult, result);
     }
